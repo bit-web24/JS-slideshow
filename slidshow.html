@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>index</title>
+        <style rel="stylesheet" type="text/css">
+            * {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .box {
+                margin-left: 600px;
+                margin-top: 200px;
+            }
+
+            #main {
+                border: 2px solid black;
+                width: 700px;
+                height: 400px;
+                background-color: antiquewhite;
+                text-align: center;
+            }
+
+            div h1 {
+                margin-top: 150px;
+                color: darkgray;
+            }
+
+            table {
+                border: hidden;
+                height: 50px;
+                width: 500px;
+                margin-top: 40px;
+                margin-left: 100px
+            }
+
+            td {
+                border: 2px solid black;
+            }
+
+            #one {
+                background-color: deepskyblue;
+            }
+
+            #two {
+                background-color: forestgreen;
+            }
+
+            #three {
+                background-color: tomato;
+            }
+
+            #four {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div id="main">
+                <h1 id="change">Hover on the below boxes to see the efect</h1>
+            </div>
+            <table>
+                <tr>
+                    <td id="one" onmouseenter="one_ofFour()"></td>
+                    <td id="two" onmouseenter="two_ofFour()"></td>
+                    <td id="three" onmouseenter="three_ofFour()"></td>
+                    <td id="four" onmouseenter="four_ofFour()"></td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript">
+            function one_ofFour() {
+                document.getElementById('main').style.backgroundColor = "deepskyblue";
+                document.getElementById('change').innerHTML = "Deepskyblue";
+                document.getElementById('change').style.color = "white";
+            }
+            function two_ofFour() {
+                document.getElementById('main').style.backgroundColor = "forestgreen";
+                document.getElementById('change').innerHTML = "Forestgreen";
+                document.getElementById('change').style.color = "white";
+            }
+            function three_ofFour() {
+                document.getElementById('main').style.backgroundColor = "tomato";
+                document.getElementById('change').innerHTML = "Tomato";
+                document.getElementById('change').style.color = "black";
+            }
+            function four_ofFour() {
+                document.getElementById('main').style.backgroundColor = "yellow";
+                document.getElementById('change').innerHTML = "Yellow";
+                document.getElementById('change').style.color = "black";
+            }
+        </script>
+    </body>
+</html>
